@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model Lab</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1>Interactive CSS Box Model Lab</h1>
+        <nav class="nav">
+            <a href="#">Home</a>
+            <a href="#">Learn</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="container">
+            <h2>Adjust the Box Model</h2>
+            <p>Use the sliders below to adjust the margin, padding, and border thickness of the green card in real time.</p>
+
+            <div class="controls">
+                <label>Margin: <span id="marginValueLabel">20</span>px</label>
+                <input type="range" id="marginSlider" min="0" max="100" value="20">
+
+                <label>Padding: <span id="paddingValueLabel">15</span>px</label>
+                <input type="range" id="paddingSlider" min="0" max="100" value="15">
+
+                <label>Border Thickness: <span id="borderValueLabel">3</span>px</label>
+                <input type="range" id="borderSlider" min="0" max="20" value="3">
+            </div>
+        </section>
+
+        <section class="card" id="boxElement">
+            <h2>Card Example</h2>
+            <p>This card updates instantly as you change the margin, padding, or border thickness.</p>
+        </section>
+
+        <aside class="preview-panel">
+            <h3>Live Box Model Preview</h3>
+            <div class="legend">
+                <span class="legend-margin">Margin</span>
+                <span class="legend-border">Border</span>
+                <span class="legend-padding">Padding</span>
+                <span class="legend-content">Content</span>
+            </div>
+            <p id="marginValue">Margin: </p>
+            <p id="paddingValue">Padding: </p>
+            <p id="borderValue">Border: </p>
+        </aside>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 My Website</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
